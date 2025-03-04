@@ -38,22 +38,42 @@
             color: #45ef1f
         }
 
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        section {
+            scroll-margin-top: 70px; /* Adjust based on navbar height */
+        }
+
+        .page-header.header-small .hestia-title, .page-header.header-small .title, h1.hestia-title.title-in-content, .main article.section .has-title-font-size {
+            font-size: 26px
+        }
+
+        /* If screen is wider than */
         @media (min-width: 769px) {
             .page-header.header-small .hestia-title, .page-header.header-small .title, h1.hestia-title.title-in-content, .main article.section .has-title-font-size {
                 font-size: 36px
             }
+
+            section {
+                scroll-margin-top: 120px; /* Adjust based on navbar height */
+            }
         }
 
+        /* If screen is wider than */
+        @media (min-width: 1200px) {
+            section {
+                scroll-margin-top: 70px; /* Adjust based on navbar height */
+            }
+        }
+
+        /* If the screen is narrower than (Transation to hamburger icon instead of header bar)*/
         @media (max-width: 768px) {
-            .page-header.header-small .hestia-title, .page-header.header-small .title, h1.hestia-title.title-in-content, .main article.section .has-title-font-size {
-                font-size: 26px
-            }
         }
 
+        /* If the screen is narrower than (Transition to centered image)*/
         @media (max-width: 480px) {
-            .page-header.header-small .hestia-title, .page-header.header-small .title, h1.hestia-title.title-in-content, .main article.section .has-title-font-size {
-                font-size: 26px
-            }
         }
     </style>
     <!-- Script for dropdown -->
@@ -109,6 +129,8 @@
                         </div>
                         <figure class="wp-block-media-text__media"><img fetchpriority="high" decoding="async" class="wp-image-58 " src="index_files/New-Passport-Photo.jpeg" sizes="(max-width: 415px) 100vw, 415px" srcset="index_files/New-Passport-Photo.jpeg 415w, index_files/New-Passport-Photo.jpeg 217w" alt="" width="284" height="392"></figure>
                     </div>
+                    <!-- Div seperator, required for correct scrolling distance -->
+                    <section></section>
 
                     <section id="About Me">
                         <h2 class="wp-block-heading">About Me</h2>
@@ -233,7 +255,6 @@
 </div>
 <!-- Script for dropdown -->
 <script type="text/javascript" src="index_files/bootstrap.min.js" id="jquery-bootstrap-js"></script>
-
 
 </body>
 </html>
