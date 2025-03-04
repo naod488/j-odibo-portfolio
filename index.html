@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en-GB">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,6 +76,22 @@
         /* If the screen is narrower than (Transition to centered image)*/
         @media (max-width: 480px) {
         }
+
+        @media print {
+            header, footer {
+                display: none !important;
+            }
+
+            * {
+                background: none !important; /* Remove background */
+                box-shadow: none !important; /* Remove shadows */
+            }
+
+            section {
+                padding-top: 10%;
+                page-break-inside: avoid; /* Prevents a section from being split across two pages */
+            }
+        }
     </style>
     <!-- Script for dropdown -->
     <script type="text/javascript" src="index_files/jquery.min.js" id="jquery-core-js"></script>
@@ -106,9 +123,9 @@
                     <ul id="menu-menu-top" class="nav navbar-nav">
                         <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a title="About Me" href="#About Me">About Me</a></li>
                         <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a title="Services" href="#Services">Services</a></li>
+                        <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a title="Why Work With Me?" href="#Why Work With Me">Why Work With Me?</a></li>
                         <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a title="Professional Engagements" href="#Professional Engagements">Professional Engagements</a></li>
-                        <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a title="Why Work With Me?" href="#Why Work With Me?">Why Work With Me?</a></li>
-                        <li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a title="Let’s Work Together" href="#Let’s Work Together">Let’s Work Together</a></li>
+                        <li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a title="Let’s Work Together" href="#Lets Work Together">Let’s Work Together</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,7 +187,7 @@
                         </ol>
                     </section>
 
-                    <section id="Why Work With Me?">
+                    <section id="Why Work With Me">
                         <h2 class="wp-block-heading">Why Work With Me?</h2>
                         <ul class="wp-block-list">
                             <li><strong>Proven Expertise:</strong>&nbsp;Over three decades of hands-on and strategic leadership.
@@ -217,7 +234,7 @@
                             Management, People Training and capacity building projects
                         </p>
                     </section>
-                    <section id="Let’s Work Together">
+                    <section id="Lets Work Together">
                         <h2 class="wp-block-heading">Let’s Work Together</h2>
 
 
@@ -244,9 +261,9 @@
                 <ul id="menu-menu-top-1" class="footer-menu pull-left">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="#About Me">About Me</a></li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="#Services">Services</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#Why Work With Me">Why Work With Me?</a></li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="#Professional Engagements">Professional Engagements</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="#Why Work With Me?">Why Work With Me?</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="#Let’s Work Together">Let’s Work Together</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="#Lets Work Together">Let’s Work Together</a></li>
                 </ul>
                 <div class="copyright pull-right">Hestia | Developed by <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a></div>
             </div>
